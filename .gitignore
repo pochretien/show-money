@@ -1,0 +1,21 @@
+# Node files
+**/node_modules
+
+# Other various
+*.eslintcache
+*.idea
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+
+# distribution
+**/dist
+
+# temporary files
+**/coverage
+**/tmp

@@ -1,0 +1,16 @@
+#Dropdown {
+  border-color: var(--purple);
+  .Dropdown-control {
+    border-radius: 6px;
+  }
+
+  .Dropdown-root.is-open {
+    .Dropdown-control {
+      border-radius: 6px 6px 0 0;
+    }
+    .Dropdown-menu {
+      border-radius: 0 0 6px 6px;
+      border-color: var(--purple);
+    }
+  }
+}

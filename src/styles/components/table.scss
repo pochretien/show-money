@@ -1,0 +1,50 @@
+.table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns:
+    minmax(150px, 2fr)
+    minmax(150px, 1.5fr)
+    minmax(150px, 1.5fr)
+    minmax(150px, 1.5fr)
+    minmax(150px, 1.5fr);
+  padding-right: 7%;
+  padding-left: 7%;
+
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    background: var(--purple);
+    text-align: left;
+    font-weight: normal;
+    color: var(--white);
+  }
+
+  th:last-child {
+    border: 0;
+  }
+
+  td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: var(--independent);
+  }
+
+  tr:nth-child(even) td {
+    background: var(--grey);
+  }
+}

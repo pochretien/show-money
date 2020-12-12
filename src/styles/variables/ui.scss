@@ -1,0 +1,23 @@
+:root {
+  --default-border: 1px solid var(--independent);
+  --header-height: 65px;
+  --default-space: 10px;
+  --default-title-space: 20px;
+
+  --header-name-padding: 20px;
+  --logo-margin-space: 10px;
+  --logo-size: 45px;
+  --logo-line-height: 20px;
+
+  --default-dropdown-width: 250px;
+
+  // Checkboxes
+  --active: var(--purple);
+  --active-inner: var(--white);
+  --focus: 2px var(--turquoise);
+  --border: var(--independent);
+  --border-hover: var(--independent);
+  --background: var(--white);
+  --disabled: var(--grey);
+  --disabled-inner: var(--grey);
+}

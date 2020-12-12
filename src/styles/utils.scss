@@ -1,0 +1,179 @@
+@import "colorsMap";
+
+// Tools
+@each $color in $palette {
+  $key: nth($color, 1);
+
+  .bg-#{$key} {
+    background-color: var(--#{$key});
+  }
+
+  .fill-#{$key} {
+    fill: var(--#{$key});
+  }
+
+  .text-#{$key} {
+    color: var(--#{$key});
+  }
+
+  .border-#{$key} {
+    border-color: var(--#{$key});
+  }
+
+  .hover-bg-#{$key}:hover {
+    background-color: var(--#{$key});
+  }
+
+  .hover-border-#{$key}:hover {
+    border-color: var(--#{$key});
+  }
+
+  .hover-fill-#{$key}:hover {
+    fill: var(--#{$key});
+  }
+}
+
+.separator {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid var(--independent);
+}
+
+// Text
+.bold {
+  font-weight: var(--main-font-bold);
+}
+
+.semibold {
+  font-weight: var(--main-font-bold);
+}
+
+.regular {
+  font-weight: var(--main-font-regular);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.reset-text-transform {
+  text-transform: none;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.break-word {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+.normal-white-space {
+  white-space: normal;
+}
+
+.smaller {
+  font-size: 0.8em;
+}
+
+.sup {
+  font-size: xx-small;
+  vertical-align: super;
+}
+
+// No display
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// Padding
+.pl {
+  padding-left: var(--default-space);
+}
+.pr {
+  padding-right: var(--default-space);
+}
+.pt {
+  padding-top: var(--default-space);
+}
+.pb {
+  padding-bottom: var(--default-space);
+}
+
+.pl-title {
+  padding-left: var(--default-title-space);
+}
+.pr-title {
+  padding-right: var(--default-title-space);
+}
+.pt-title {
+  padding-top: var(--default-title-space);
+}
+.pb-title {
+  padding-bottom: var(--default-title-space);
+}
+
+// Margin
+.ml {
+  margin-left: var(--default-space);
+}
+.mr {
+  margin-right: var(--default-space);
+}
+.mt {
+  margin-top: var(--default-space);
+}
+.mb {
+  margin-bottom: var(--default-space);
+}
+
+.ml-title {
+  margin-left: var(--default-title-space);
+}
+.mr-title {
+  margin-right: var(--default-title-space);
+}
+.mt-title {
+  margin-top: var(--default-title-space);
+}
+.mb-title {
+  margin-bottom: var(--default-title-space);
+}

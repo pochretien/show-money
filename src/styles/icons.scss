@@ -1,0 +1,40 @@
+.icon {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  overflow: visible;
+
+  &.mod-small {
+    width: 0.7em;
+    height: 0.7em;
+  }
+
+  &.mod-normal {
+    width: 1em;
+    height: 1em;
+  }
+
+  &.mod-lg {
+    width: (4em / 3);
+    height: (4em / 3);
+    line-height: (4em / 3);
+    vertical-align: -0.1em;
+  }
+
+  &.mod-2x {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.5em;
+  }
+
+  &.mod-3x {
+    width: 3em;
+    height: 3em;
+    vertical-align: -1em;
+  }
+
+  &.disabled {
+    opacity: 0.7;
+    fill: var(--independent);
+  }
+}

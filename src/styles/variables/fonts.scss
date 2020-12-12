@@ -1,0 +1,26 @@
+:root {
+  // font-size
+  --default-font: 16px;
+  --small-font: 12px;
+  --large-font: 18px;
+
+  // line-weight
+  --main-font-bold: 700;
+  --main-font-regular: 500;
+  --main-font-small: 300;
+
+  // line-height
+  --default-line-height: 1.5em;
+}
+
+.default-font {
+  font-size: var(--default-font);
+}
+
+.large-font {
+  font-size: var(--large-font);
+}
+
+.small-font {
+  font-size: var(--small-font);
+}
